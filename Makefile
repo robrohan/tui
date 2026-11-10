@@ -21,14 +21,14 @@ tui:
 	$(CC) -std=c11 $(C_ERRS) -O2 \
 		-I./vendor/r2 \
 		-I./vendor/r2/tui \
-		src/main.c \
+		src/vt.c src/pty.c src/main.c \
 		-o bin/tui
 
 clean:
 	rm -rf bin
 
 fmt:
-	clang-format -i ./src/*.c
+	clang-format -i ./src/*.[ch]
 
 .DEFAULT:
 	@$(GMAKE) CC='$(CC)' $@

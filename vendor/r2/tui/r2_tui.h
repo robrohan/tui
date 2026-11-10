@@ -4658,7 +4658,7 @@ extern "C"
         tui_draw_fill(t, (tui_rect){0, 0, t->cols, 1}, ' ', th->menu);
         for (m = 0; m < n; m++)
         {
-            const char *title = m == 0 ? "\xE2\x89\xA1" : bar->text + bar->menu[m - 1].title;
+            const char *title = m == 0 ? "τ" : bar->text + bar->menu[m - 1].title;
             int sel = t->menu_open && t->menu_idx == m;
             tui_style s = modal ? th->menu_disabled : sel ? th->menu_sel : th->menu;
             tui_style h = modal ? th->menu_disabled : sel ? th->menu_sel_hot : th->menu_hot;
