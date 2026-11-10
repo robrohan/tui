@@ -69,11 +69,6 @@ static void desktop_menus(tui *tt);
 //////////////////////////////////////////////////////
 // Terminal
 
-// static int rune_width(uint32_t ch)
-// {
-//     return tui_rune_width(ch);
-// }
-
 static void term_reply(void *user, const char *bytes, size_t n)
 {
     terminal_t *term = user;
