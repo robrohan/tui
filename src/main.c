@@ -33,8 +33,8 @@ static int running = 1, quitting, windows, open_failed;
 #define FS_NAME_MAX 128
 
 /* the colours of a terminal's foreground and background */
-#define TERM_FG TUI_WHITE
-#define TERM_BG TUI_BLACK
+#define TERM_FG TUI_BRIGHT_WHITE
+#define TERM_BG TUI_BLUE
 /* bytes read from one shell before the screen is redrawn */
 #define TERM_READ_MAX 65536
 
